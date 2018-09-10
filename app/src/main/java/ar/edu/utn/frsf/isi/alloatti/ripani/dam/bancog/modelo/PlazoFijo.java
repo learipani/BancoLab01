@@ -95,14 +95,42 @@ public class PlazoFijo {
                 '}';
     }
 
-    private Double tasa(){
+    private Double CalcularTasa(){
         if(dias< 30 && monto <=5000)
             return Double.valueOf(tasas[0]);
-        // …....
-        // completar
+        else {
+            if(dias >= 30 && monto <=5000){
+                return Double.valueOf(tasas[1]);
+            }
+            else {
+                if(dias < 30 && monto > 5000 && monto <= 99999){
+                    return Double.valueOf(tasas[2]);
+                }
+                else {
+                    if(dias >= 30 && monto > 5000 && monto <= 99999){
+                        return Double.valueOf(tasas[3]);
+                    }
+                    else {
+                        if(dias < 30 && monto > 99999 ){
+                            return Double.valueOf(tasas[4]);
+                        }
+                        else {
+                            if(dias >= 30 && monto > 99999 ) return Double.valueOf(tasas[5]);
+                        }
+                    }
+                }
+            }
+        }
         return 0.0;
     }
     public Double intereses(){
-        return 0.0;//hacer el calculo;
+
+        double interes,tasa;
+
+        tasa = this.CalcularTasa();
+
+        interes = monto * ( Math.pow((1 + (tasa/100.0)),(dias/360.0)) - 1 );
+
+        return interes;
     }
 }

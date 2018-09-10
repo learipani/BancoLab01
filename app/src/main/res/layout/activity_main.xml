@@ -43,19 +43,20 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id = "@+id/rgMoneda">
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lblMonedaDolar"
-            android:id="@+id/rdBtnDolar" />
+            android:id="@+id/rbtnDolar" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lblMonedaPeso"
-            android:id="@+id/rdBtnPeso" />
+            android:id="@+id/rbtnPeso" />
     </RadioGroup>
 
     <TextView
@@ -107,7 +108,7 @@
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/swtAvisar" />
+            android:id="@+id/swAvisar" />
     </LinearLayout>
 
     <ToggleButton
@@ -115,7 +116,7 @@
         android:layout_height="wrap_content"
         android:textOn="@string/lblAccionVencimientoRenovar"
         android:textOff="@string/lblAccionVencimientoAcreditar"
-        android:id="@+id/btnAcreditar" />
+        android:id="@+id/tgbtnAccion" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -135,6 +136,6 @@
         android:layout_weight="1"
         android:maxLines="6"
         android:text=""
-        android:id="@+id/lblEdtResultados" />
+        android:id="@+id/lblInfo" />
 
 </LinearLayout>
