@@ -95,7 +95,7 @@ public class PlazoFijo {
                 '}';
     }
 
-    private Double CalcularTasa(){
+    public Double CalcularTasa(){
         if(dias< 30 && monto <=5000)
             return Double.valueOf(tasas[0]);
         else {
