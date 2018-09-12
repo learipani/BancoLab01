@@ -7,8 +7,8 @@
     <string name="lblMonedaPeso">AR$</string>
     <string name="lblMontoAInvertir">Monto a invertir</string>
     <string name="lblDias">Dias</string>
-    <string name="lblDiasSelecc">X dias De plazo.</string>
-    <string name="lblIntereses">$541654</string>
+    <string name="lblDiasSelecc">Seleccione cantidad de días</string>
+    <string name="lblIntereses">$</string>
     <string name="lblAvisar">Avisar por mail antes del vencimiento</string>
     <string name="lblRendimiento">Rendimiento</string>
     <string name="ckBoxATyC">Aceptar Terminos y Condiciones</string>
